@@ -1,0 +1,5 @@
+pdfplumber
+spacy
+nltk
+scikit-learn
+transformers
