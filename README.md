@@ -1,6 +1,8 @@
 # Resume Parser & Job Recommendation Engine
 
-This project extracts structured data from raw PDF resumes and recommends jobs based on skills and experience using NLP techniques.
+This project is a rule-based Resume Parser and Job Recommendation Engine built using Python.
+🧪 Note: This is a lightweight prototype using simple keyword matching and TF-IDF. Accuracy is limited and depends heavily on resume formatting and content quality.
+
 
 ## 🔧 Features
 - Extract text from PDF resumes
@@ -10,13 +12,16 @@ This project extracts structured data from raw PDF resumes and recommends jobs b
 
 ## 🚀 Tech Stack
 - Python
-- SpaCy
-- NLTK
-- Hugging Face Transformers
-- scikit-learn
+- PDFPlumber (resume text extraction)
+- Rule-based parsing with Regex
+- TF-IDF & Cosine Similarity (`scikit-learn`)
 
-## ✅ To-Do
-- [ ] Step 1: Extract text from PDF resumes
-- [ ] Step 2: Parse structured info
-- [ ] Step 3: Match skills with job descriptions
-- [ ] Step 4: Build recommender system
+## ⚠️ Known Limitations
+- Parsing logic is rule-based and fragile for unusual resume formats.
+- No semantic understanding of text (no NER, no embeddings).
+- Job matching relies on keyword overlap, not contextual meaning.
+
+## 🚀 Future Improvements
+- Use SpaCy for Named Entity Recognition (NER)
+- Replace TF-IDF with BERT embeddings (Hugging Face Transformers)
+- Build a web interface or CLI tool
